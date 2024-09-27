@@ -1,0 +1,105 @@
+문제
+
+Math.random()을 사용하여 숫자 맞추기 게임 만들기.
+
+====================
+1.쉬움	>>>  1~10
+2.보통	>>>  1~100
+3.어려움	>>>  1~1000
+====================
+>>>1
+====================
+숫자를 입력해주세요.
+기회 >>> 3
+>>>5
+5보다 작습니다.
+기회 >>> 2
+>>>3
+3보다 작습니다.
+기회 >>> 1
+>>>2
+정답입니다!
+승리하셨습니다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//풀이
+
+
+//package if_;
+//import java.util.Scanner;
+//public class guessthenumber {
+//	public static void main(String[] args) {
+//		Scanner input =new Scanner(System.in);
+//		
+//		int num, mode,answer,chance;
+//		
+//		System.out.println("====================");
+//		System.out.println("1.쉬움\t>>>  1~10");
+//		System.out.println("2.보통\t>>>  1~100");
+//		System.out.println("3.어려움\t>>>  1~1000");
+//		System.out.println("====================");
+//		System.out.print(">>>");
+//		mode =input.nextInt();
+//		
+//		num=0;
+//		if (mode==1)		//난이도에 따라서 숫자의 범위가 커집니다.
+//			num=(int)((Math.random()*10));
+//		else if (mode==2)
+//			num=(int)((Math.random()*100));
+//		else if (mode==3)
+//			num=(int)((Math.random()*1000));
+//		else
+//			System.out.println("입력 오류입니다.");		//입력 오류 메세지입니다.
+//		
+//		System.out.println("====================");
+//		System.out.println("숫자를 입력해주세요.");
+//		answer=0;
+//		for (chance=0;chance<=3;chance++) {
+//			System.out.println("기회 >>> "+(3-chance));
+//			System.out.print(">>>");
+//			answer =input.nextInt();
+//			
+//			if (answer==num) {
+//				System.out.println("정답입니다!");
+//				chance=3;}
+//			else
+//				if (answer>num)
+//					System.out.println(answer+"보다 작습니다.");
+//				else if (answer<num)
+//					System.out.println(answer+"보다 큽니다.");
+//		}
+//		if (answer==num)
+//			System.out.println("승리하셨습니다.");
+//		else 
+//			System.out.println("패배하셨습니다. 정답은 "+num+" 이었습니다.");
+//
+//		
+//	}
+//
+//}
